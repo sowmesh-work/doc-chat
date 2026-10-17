@@ -1,0 +1,779 @@
+{
+  "config": {
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "top_k": 5,
+    "embed_model": "all-MiniLM-L6-v2",
+    "claude_model": "claude-haiku-5-5"
+  },
+  "summary": {
+    "retrieval_hit_rate": "10/16",
+    "answer_accuracy": "10/16",
+    "refusal_accuracy": "4/4",
+    "input_tokens": 39706,
+    "output_tokens": 2634,
+    "cost_usd": 0.0053
+  },
+  "results": [
+    {
+      "id": "bloom-01",
+      "question": "What does VBF stand for?",
+      "answerable": true,
+      "answer": "I don't know",
+      "input_tokens": 2172,
+      "output_tokens": 210,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "bloom.pdf",
+          "page": 7,
+          "score": 0.392
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 5,
+          "score": 0.386
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 6,
+          "score": 0.383
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 2,
+          "score": 0.326
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 5,
+          "score": 0.308
+        }
+      ],
+      "retrieval_hit": false,
+      "correct": false
+    },
+    {
+      "id": "bloom-02",
+      "question": "What dataset did the authors test on?",
+      "answerable": true,
+      "answer": "I don't know. The sources are excerpts from a Cambridge University Press volume on Alexander the Great (CAH06_Bosworth_Alexander.pdf). They include a bibliography abbreviation list and a passage about Arrian's account of an exploit, but nothing about a dataset or any testing.",
+      "input_tokens": 1021,
+      "output_tokens": 171,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 19,
+          "score": 0.353
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 119,
+          "score": 0.353
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 40,
+          "score": 0.322
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 116,
+          "score": 0.278
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 29,
+          "score": 0.278
+        }
+      ],
+      "retrieval_hit": false,
+      "correct": false
+    },
+    {
+      "id": "bloom-03",
+      "question": "How many flows were in the packet trace used for the comparison?",
+      "answerable": true,
+      "answer": "The packet trace had a total of 168640 flows [2]. The trace was a 5 million packet CAIDA trace, and the maximum number of concurrently active flows was 46953 [2].",
+      "input_tokens": 2344,
+      "output_tokens": 154,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "bloom.pdf",
+          "page": 5,
+          "score": 0.523
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 5,
+          "score": 0.498
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 7,
+          "score": 0.446
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 10,
+          "score": 0.439
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 6,
+          "score": 0.438
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": true
+    },
+    {
+      "id": "bloom-04",
+      "question": "How many filters are in the bank for the 2-encoding scheme?",
+      "answerable": true,
+      "answer": "The 2-encoding scheme has 45 filters in the bank. [1][3]",
+      "input_tokens": 2210,
+      "output_tokens": 69,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "bloom.pdf",
+          "page": 9,
+          "score": 0.596
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 8,
+          "score": 0.559
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 9,
+          "score": 0.476
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 8,
+          "score": 0.469
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 9,
+          "score": 0.466
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": true
+    },
+    {
+      "id": "bloom-05",
+      "question": "How many bits per flow does the 2-encoding scheme use when Pe is 1%?",
+      "answerable": true,
+      "answer": "The 2-encoding scheme uses **35 bits/flow** when Pe = 1% [3]. Table 3 is consistent with this: its row for the 2-encoding scheme at Pe = 1 lists a signature space of 3491 Kbits [4].",
+      "input_tokens": 2204,
+      "output_tokens": 261,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "bloom.pdf",
+          "page": 9,
+          "score": 0.53
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 9,
+          "score": 0.486
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 9,
+          "score": 0.461
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 9,
+          "score": 0.448
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 8,
+          "score": 0.418
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": true
+    },
+    {
+      "id": "bloom-06",
+      "question": "By roughly how much does the basic VBF reduce the overall false negative rate?",
+      "answerable": true,
+      "answer": "The basic VBF reduces the overall false negative rate by about **4-fold**. The source states that \"the VBF is able to reduce the overall false negative rate by approximately 4-folds\" [1]. The Table 1 averages agree: the SBF's average FN is 8522 and the VBF's is 2082 (×10⁻⁴), a ratio of about 4.1 [1].",
+      "input_tokens": 2042,
+      "output_tokens": 244,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "bloom.pdf",
+          "page": 6,
+          "score": 0.587
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 5,
+          "score": 0.568
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 5,
+          "score": 0.51
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 5,
+          "score": 0.504
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 6,
+          "score": 0.495
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": true
+    },
+    {
+      "id": "alex-01",
+      "question": "At which river did Alexander fight the Persians in 334 BC?",
+      "answerable": true,
+      "answer": "Alexander fought the Persians at the Granicus. The sources describe the crossing of the Granicus, where a cavalry contingent crossed \"to advance as far as possible and sustain the Persian counter-charge while the bulk of the army crossed\" [3]. The sources do not state the year, so they do not confirm the 334 BC date.",
+      "input_tokens": 2113,
+      "output_tokens": 280,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 26,
+          "score": 0.669
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 86,
+          "score": 0.662
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 7,
+          "score": 0.653
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 31,
+          "score": 0.649
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 20,
+          "score": 0.644
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": true
+    },
+    {
+      "id": "alex-02",
+      "question": "Who saved Alexander's life during the battle at the Granicus?",
+      "answerable": true,
+      "answer": "I don't know",
+      "input_tokens": 2244,
+      "output_tokens": 63,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 40,
+          "score": 0.641
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 50,
+          "score": 0.6
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 19,
+          "score": 0.589
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 26,
+          "score": 0.587
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 34,
+          "score": 0.58
+        }
+      ],
+      "retrieval_hit": false,
+      "correct": false
+    },
+    {
+      "id": "alex-03",
+      "question": "How many warships did the Persians mobilize in the Levant by the summer of 334?",
+      "answerable": true,
+      "answer": "According to the sources, by the summer of 334 an armada of 400 warships was mobilized in the Levant for action in the Aegean [1].",
+      "input_tokens": 2076,
+      "output_tokens": 46,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 5,
+          "score": 0.626
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 9,
+          "score": 0.591
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 108,
+          "score": 0.588
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 12,
+          "score": 0.577
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 9,
+          "score": 0.574
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": true
+    },
+    {
+      "id": "alex-04",
+      "question": "Who surrendered the citadel of Sardes to Alexander?",
+      "answerable": true,
+      "answer": "The citadel of Sardes was surrendered without a blow by its Persian commander, Mithrenes. [1]",
+      "input_tokens": 2068,
+      "output_tokens": 107,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 8,
+          "score": 0.701
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 8,
+          "score": 0.62
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 26,
+          "score": 0.608
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 11,
+          "score": 0.597
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 16,
+          "score": 0.594
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": true
+    },
+    {
+      "id": "alex-05",
+      "question": "According to Aristobulus, how did Alexander undo the Gordian knot?",
+      "answerable": true,
+      "answer": "According to Aristobulus, Alexander did not cut the knot. He \"removed the yoke pin and pulled the yoke from its pole, fastening and all\" [4]. The more popular version was that Alexander cut through the fastening [4].",
+      "input_tokens": 1973,
+      "output_tokens": 156,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 11,
+          "score": 0.565
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 15,
+          "score": 0.516
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 13,
+          "score": 0.513
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 12,
+          "score": 0.507
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 22,
+          "score": 0.501
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": true
+    },
+    {
+      "id": "alex-06",
+      "question": "On what date did Alexander marshal his forces for the battle of Gaugamela?",
+      "answerable": true,
+      "answer": "I don't know",
+      "input_tokens": 2122,
+      "output_tokens": 59,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 37,
+          "score": 0.558
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 8,
+          "score": 0.544
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 32,
+          "score": 0.544
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 40,
+          "score": 0.542
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 22,
+          "score": 0.533
+        }
+      ],
+      "retrieval_hit": false,
+      "correct": false
+    },
+    {
+      "id": "alex-07",
+      "question": "How many defenders of Tyre died when the city was taken?",
+      "answerable": true,
+      "answer": "According to the sources, 8,000 defenders perished in the carnage after the walls were breached and the attackers stormed into the palace and lower city [1]. A further 2,000 were allegedly crucified along the coast [1].",
+      "input_tokens": 2151,
+      "output_tokens": 142,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 17,
+          "score": 0.585
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 17,
+          "score": 0.581
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 19,
+          "score": 0.533
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 5,
+          "score": 0.477
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 17,
+          "score": 0.472
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": true
+    },
+    {
+      "id": "alex-08",
+      "question": "At which river did Alexander's army refuse to march further east?",
+      "answerable": true,
+      "answer": "I don't know",
+      "input_tokens": 2149,
+      "output_tokens": 111,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 7,
+          "score": 0.683
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 15,
+          "score": 0.679
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 20,
+          "score": 0.668
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 25,
+          "score": 0.66
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 6,
+          "score": 0.659
+        }
+      ],
+      "retrieval_hit": false,
+      "correct": false
+    },
+    {
+      "id": "alex-09",
+      "question": "What was the name of Alexander's Bactrian wife?",
+      "answerable": true,
+      "answer": "Alexander's Bactrian wife was Rhoxane [1]. She was the daughter of Oxyartes, and the marriage took place in Macedonian style early in 327 [1].",
+      "input_tokens": 2200,
+      "output_tokens": 113,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 33,
+          "score": 0.736
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 27,
+          "score": 0.576
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 26,
+          "score": 0.57
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 48,
+          "score": 0.559
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 2,
+          "score": 0.558
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": true
+    },
+    {
+      "id": "alex-10",
+      "question": "Who were the actual assassins of Darius?",
+      "answerable": true,
+      "answer": "I don't know",
+      "input_tokens": 2272,
+      "output_tokens": 233,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 14,
+          "score": 0.635
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 25,
+          "score": 0.627
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 27,
+          "score": 0.604
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 18,
+          "score": 0.602
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 5,
+          "score": 0.59
+        }
+      ],
+      "retrieval_hit": false,
+      "correct": false
+    },
+    {
+      "id": "none-01",
+      "question": "What is the capital of France?",
+      "answerable": false,
+      "answer": "I don't know",
+      "input_tokens": 1200,
+      "output_tokens": 34,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 126,
+          "score": 0.313
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 131,
+          "score": 0.25
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 138,
+          "score": 0.233
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 77,
+          "score": 0.221
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 14,
+          "score": 0.218
+        }
+      ],
+      "retrieval_hit": null,
+      "correct": true
+    },
+    {
+      "id": "none-02",
+      "question": "Who won the 2022 FIFA World Cup?",
+      "answerable": false,
+      "answer": "I don't know",
+      "input_tokens": 910,
+      "output_tokens": 50,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 73,
+          "score": 0.263
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 126,
+          "score": 0.212
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 12,
+          "score": 0.182
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 66,
+          "score": 0.176
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 107,
+          "score": 0.17
+        }
+      ],
+      "retrieval_hit": null,
+      "correct": true
+    },
+    {
+      "id": "none-03",
+      "question": "What was Alexander's favourite food?",
+      "answerable": false,
+      "answer": "I don't know",
+      "input_tokens": 2006,
+      "output_tokens": 38,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 85,
+          "score": 0.577
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 89,
+          "score": 0.572
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 85,
+          "score": 0.566
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 48,
+          "score": 0.546
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 26,
+          "score": 0.538
+        }
+      ],
+      "retrieval_hit": null,
+      "correct": true
+    },
+    {
+      "id": "none-04",
+      "question": "Which programming language did the Bloom filter authors use for their simulations?",
+      "answerable": false,
+      "answer": "I don't know",
+      "input_tokens": 2229,
+      "output_tokens": 93,
+      "stop_reason": "end_turn",
+      "sources": [
+        {
+          "source": "bloom.pdf",
+          "page": 1,
+          "score": 0.514
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 10,
+          "score": 0.472
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 2,
+          "score": 0.46
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 10,
+          "score": 0.449
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 4,
+          "score": 0.432
+        }
+      ],
+      "retrieval_hit": null,
+      "correct": true
+    }
+  ]
+}
