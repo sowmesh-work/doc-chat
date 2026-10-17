@@ -1,0 +1,694 @@
+{
+  "config": {
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "top_k": 5,
+    "embed_model": "all-MiniLM-L6-v2",
+    "claude_model": null
+  },
+  "summary": {
+    "retrieval_hit_rate": "10/16"
+  },
+  "results": [
+    {
+      "id": "bloom-01",
+      "question": "What does VBF stand for?",
+      "answerable": true,
+      "sources": [
+        {
+          "source": "bloom.pdf",
+          "page": 7,
+          "score": 0.392
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 5,
+          "score": 0.386
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 6,
+          "score": 0.383
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 2,
+          "score": 0.326
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 5,
+          "score": 0.308
+        }
+      ],
+      "retrieval_hit": false,
+      "correct": null
+    },
+    {
+      "id": "bloom-02",
+      "question": "What dataset did the authors test on?",
+      "answerable": true,
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 19,
+          "score": 0.353
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 119,
+          "score": 0.353
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 40,
+          "score": 0.322
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 116,
+          "score": 0.278
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 29,
+          "score": 0.278
+        }
+      ],
+      "retrieval_hit": false,
+      "correct": null
+    },
+    {
+      "id": "bloom-03",
+      "question": "How many flows were in the packet trace used for the comparison?",
+      "answerable": true,
+      "sources": [
+        {
+          "source": "bloom.pdf",
+          "page": 5,
+          "score": 0.523
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 5,
+          "score": 0.498
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 7,
+          "score": 0.446
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 10,
+          "score": 0.439
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 6,
+          "score": 0.438
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": null
+    },
+    {
+      "id": "bloom-04",
+      "question": "How many filters are in the bank for the 2-encoding scheme?",
+      "answerable": true,
+      "sources": [
+        {
+          "source": "bloom.pdf",
+          "page": 9,
+          "score": 0.596
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 8,
+          "score": 0.559
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 9,
+          "score": 0.476
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 8,
+          "score": 0.469
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 9,
+          "score": 0.466
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": null
+    },
+    {
+      "id": "bloom-05",
+      "question": "How many bits per flow does the 2-encoding scheme use when Pe is 1%?",
+      "answerable": true,
+      "sources": [
+        {
+          "source": "bloom.pdf",
+          "page": 9,
+          "score": 0.53
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 9,
+          "score": 0.486
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 9,
+          "score": 0.461
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 9,
+          "score": 0.448
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 8,
+          "score": 0.418
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": null
+    },
+    {
+      "id": "bloom-06",
+      "question": "By roughly how much does the basic VBF reduce the overall false negative rate?",
+      "answerable": true,
+      "sources": [
+        {
+          "source": "bloom.pdf",
+          "page": 6,
+          "score": 0.587
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 5,
+          "score": 0.568
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 5,
+          "score": 0.51
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 5,
+          "score": 0.504
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 6,
+          "score": 0.495
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": null
+    },
+    {
+      "id": "alex-01",
+      "question": "At which river did Alexander fight the Persians in 334 BC?",
+      "answerable": true,
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 26,
+          "score": 0.669
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 86,
+          "score": 0.662
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 7,
+          "score": 0.653
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 31,
+          "score": 0.649
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 20,
+          "score": 0.644
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": null
+    },
+    {
+      "id": "alex-02",
+      "question": "Who saved Alexander's life during the battle at the Granicus?",
+      "answerable": true,
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 40,
+          "score": 0.641
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 50,
+          "score": 0.6
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 19,
+          "score": 0.589
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 26,
+          "score": 0.587
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 34,
+          "score": 0.58
+        }
+      ],
+      "retrieval_hit": false,
+      "correct": null
+    },
+    {
+      "id": "alex-03",
+      "question": "How many warships did the Persians mobilize in the Levant by the summer of 334?",
+      "answerable": true,
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 5,
+          "score": 0.626
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 9,
+          "score": 0.591
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 108,
+          "score": 0.588
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 12,
+          "score": 0.577
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 9,
+          "score": 0.574
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": null
+    },
+    {
+      "id": "alex-04",
+      "question": "Who surrendered the citadel of Sardes to Alexander?",
+      "answerable": true,
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 8,
+          "score": 0.701
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 8,
+          "score": 0.62
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 26,
+          "score": 0.608
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 11,
+          "score": 0.597
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 16,
+          "score": 0.594
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": null
+    },
+    {
+      "id": "alex-05",
+      "question": "According to Aristobulus, how did Alexander undo the Gordian knot?",
+      "answerable": true,
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 11,
+          "score": 0.565
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 15,
+          "score": 0.516
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 13,
+          "score": 0.513
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 12,
+          "score": 0.507
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 22,
+          "score": 0.501
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": null
+    },
+    {
+      "id": "alex-06",
+      "question": "On what date did Alexander marshal his forces for the battle of Gaugamela?",
+      "answerable": true,
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 37,
+          "score": 0.558
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 8,
+          "score": 0.544
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 32,
+          "score": 0.544
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 40,
+          "score": 0.542
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 22,
+          "score": 0.533
+        }
+      ],
+      "retrieval_hit": false,
+      "correct": null
+    },
+    {
+      "id": "alex-07",
+      "question": "How many defenders of Tyre died when the city was taken?",
+      "answerable": true,
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 17,
+          "score": 0.585
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 17,
+          "score": 0.581
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 19,
+          "score": 0.533
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 5,
+          "score": 0.477
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 17,
+          "score": 0.472
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": null
+    },
+    {
+      "id": "alex-08",
+      "question": "At which river did Alexander's army refuse to march further east?",
+      "answerable": true,
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 7,
+          "score": 0.683
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 15,
+          "score": 0.679
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 20,
+          "score": 0.668
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 25,
+          "score": 0.66
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 6,
+          "score": 0.659
+        }
+      ],
+      "retrieval_hit": false,
+      "correct": null
+    },
+    {
+      "id": "alex-09",
+      "question": "What was the name of Alexander's Bactrian wife?",
+      "answerable": true,
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 33,
+          "score": 0.736
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 27,
+          "score": 0.576
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 26,
+          "score": 0.57
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 48,
+          "score": 0.559
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 2,
+          "score": 0.558
+        }
+      ],
+      "retrieval_hit": true,
+      "correct": null
+    },
+    {
+      "id": "alex-10",
+      "question": "Who were the actual assassins of Darius?",
+      "answerable": true,
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 14,
+          "score": 0.635
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 25,
+          "score": 0.627
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 27,
+          "score": 0.604
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 18,
+          "score": 0.602
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 5,
+          "score": 0.59
+        }
+      ],
+      "retrieval_hit": false,
+      "correct": null
+    },
+    {
+      "id": "none-01",
+      "question": "What is the capital of France?",
+      "answerable": false,
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 126,
+          "score": 0.313
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 131,
+          "score": 0.25
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 138,
+          "score": 0.233
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 77,
+          "score": 0.221
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 14,
+          "score": 0.218
+        }
+      ],
+      "retrieval_hit": null,
+      "correct": null
+    },
+    {
+      "id": "none-02",
+      "question": "Who won the 2022 FIFA World Cup?",
+      "answerable": false,
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 73,
+          "score": 0.263
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 126,
+          "score": 0.212
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 12,
+          "score": 0.182
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 66,
+          "score": 0.176
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 107,
+          "score": 0.17
+        }
+      ],
+      "retrieval_hit": null,
+      "correct": null
+    },
+    {
+      "id": "none-03",
+      "question": "What was Alexander's favourite food?",
+      "answerable": false,
+      "sources": [
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 85,
+          "score": 0.577
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 89,
+          "score": 0.572
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 85,
+          "score": 0.566
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 48,
+          "score": 0.546
+        },
+        {
+          "source": "CAH06_Bosworth_Alexander.pdf",
+          "page": 26,
+          "score": 0.538
+        }
+      ],
+      "retrieval_hit": null,
+      "correct": null
+    },
+    {
+      "id": "none-04",
+      "question": "Which programming language did the Bloom filter authors use for their simulations?",
+      "answerable": false,
+      "sources": [
+        {
+          "source": "bloom.pdf",
+          "page": 1,
+          "score": 0.514
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 10,
+          "score": 0.472
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 2,
+          "score": 0.46
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 10,
+          "score": 0.449
+        },
+        {
+          "source": "bloom.pdf",
+          "page": 4,
+          "score": 0.432
+        }
+      ],
+      "retrieval_hit": null,
+      "correct": null
+    }
+  ]
+}
